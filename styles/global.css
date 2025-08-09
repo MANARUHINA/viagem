@@ -5,19 +5,29 @@
 }
 
 :root {
-  /*Produto*/
+  /*Produto cor*/
   --brand-color: #EF5F4C;
-   /*Shape*/
+   /*Shape cor*/
    --background-color:#FFFFFF;
    --surface-color:#F5F5F5;
    --skeleton-color:#D9D9D9;
    --shape-transparency:#ffffff91;
-   /*TEXT*/
+   /*TEXT cor*/
    --text-color-primary: #313131;
    --text-color-secondary: #6C6C6C;
+
+   /* Tipografia */
+   --font-family: "poppins", sans-serif; /* Fonte poppins */
+   --text-lg: bold 32px/125% var(--font-family); /* fonte grande */
+   --text: 16px/150% var(--font-family);/* fonte geral, podeia ser 1.5 no lugar do 150% */
+   --text-md: 14px/175% var(--font-family);/* fonte Media */
+   --text-sm: 12px/175% var(--font-family);/* fonte pequena */
 }
+
+
 
 body {
   color: var(--text-color-secondary);
   background-color: var(--background-color);
 }
+
