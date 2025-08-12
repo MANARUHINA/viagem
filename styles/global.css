@@ -19,9 +19,9 @@
    /* Tipografia */
    --font-family: "poppins", sans-serif; /* Fonte poppins */
    --text-lg: bold 32px/125% var(--font-family); /* fonte grande */
-   --text: 16px/150% var(--font-family);/* fonte geral, podeia ser 1.5 no lugar do 150% */
-   --text-md: 14px/175% var(--font-family);/* fonte Media */
-   --text-sm: 12px/175% var(--font-family);/* fonte pequena */
+   --text: 16px/150% var(--font-family);/* fonte geral, poderia ser 1.5 no lugar do 150% */
+   --text-md: 14px/170% var(--font-family);/* fonte Media */
+   --text-sm: 12px/170% var(--font-family);/* fonte pequena */
 }
 
 body {
@@ -48,6 +48,6 @@ a:hover /* quando eu passar o mouse por cima do link - link e o a, hover e essa 
 
 }
 
-.surface-color /* nav tem limitações a div nao por isso foi criado uma class nova para o background-color*/{
+.bg-surface-color /* nav tem limitações a div nao por isso foi criado uma class nova para o background-color*/{
   background-color: var(--surface-color);
 }
