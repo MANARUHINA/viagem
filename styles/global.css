@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root {
+:root /* Raiz */{
   /*Produto cor*/
   --brand-color: #EF5F4C;
    /*Shape cor*/
@@ -24,10 +24,30 @@
    --text-sm: 12px/175% var(--font-family);/* fonte pequena */
 }
 
-
-
 body {
+  font: var(--text);
   color: var(--text-color-secondary);
   background-color: var(--background-color);
 }
 
+
+a /* Os links */ {
+text-decoration: none; /* tirando as decorações como o underline */
+color: inherit; /* vai ficar a cor herdada no body */
+}
+
+a:hover /* quando eu passar o mouse por cima do link - link e o a, hover e essa ação de descansar o mouse*/ {
+  color: var(--brand-color); /*  --brand-color: #EF5F4C; e aquele vermelho*/
+  text-decoration: underline; /* colocando as decorações do underline */
+}
+
+.container /* classe a nivel de projeto*/{
+  padding-inline: 32px;
+  max-width: 1280px;
+  margin-inline: auto;
+
+}
+
+.surface-color /* nav tem limitações a div nao por isso foi criado uma class nova para o background-color*/{
+  background-color: var(--surface-color);
+}

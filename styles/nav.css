@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    justify-content: space-between; /* espaço igual entre os itens */
+    align-items: center; /* alinhar os itens no centro  */
+    padding-block: 20px;  /* padding em cima e em baixo */
+}
+nav ul {
+    list-style: none; /* tirar aquelas bolinhas da lista */
+    display: flex;
+    align-items: center; /* alinhar os itens no centro  */
+    gap: 20px;  /* espaçamento entre os elementos da lista  */
+
+    padding-block: 8px; /* espaço em cima e em baixo  */
+    gap: 24px;
+}
+
+nav ul li:last-child img /* e a ultima imagem da lista */ {
+width: 40px; /* altura */ 
+height: 40px; /* largura */ 
+}
