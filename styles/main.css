@@ -1,12 +1,13 @@
 main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    padding-block: 24px;
+    display: flex;           /* O main vira um container flexível */
+    flex-wrap: wrap;         /* Os itens filhos podem quebrar linha (quebrar o flex-row) */
+    gap: 24px;               /* Espaço de 24px entre os elementos filhos */
+    padding-block: 24px;     /* Espaço interno de 24px em cima e embaixo do main */
 }
 
 main img {
-    width: 286px;
-    height: 286px;
-    object-fit: cover;
+    width: 286px;             /* Largura fixa para as imagens */
+    height: 286px;            /* Altura fixa para as imagens */
+    object-fit: cover;        /* As imagens são cortadas para preencher o espaço, mantendo proporção */
+
 }

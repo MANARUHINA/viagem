@@ -1,45 +1,42 @@
 header {
-    padding-block: 32px;
-    font: var(--text-md);
-}
-/* parte dos icones de lugar, avião e imagem*/
-header .container {
-    display: flex;
-     justify-content: space-between; /* espaço igual entre os itens */
-     align-items: center;
+    padding-block: 32px;             /* Espaço interno em cima e embaixo do header, evita que use padding-top e padding-bottom*/
+    font: var(--text-md);            /* Aplica uma fonte padrão definida na variável CSS --text-md */
 }
 
-
+header .container {                  /* Container dentro do header que contém os ícones de lugar, avião e imagem */         
+    display: flex;                   /* Faz do container um flexbox */
+     justify-content: space-between; /* Espaço máximo entre os itens, um grudado na esquerda, outro na direita */
+     align-items: center;            /* Alinha verticalmente os itens no centro */  
+}
 
 #profile{
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    display: flex;                   /* Transforma o perfil em um container flexível */
+    align-items: center;             /* Alinho verticalmente ao centro */
+    gap: 32px;                       /* Espaço de 32px entre os itens filhos do perfil */
 }
 #profile > div {
-    max-width: 384px;
+    max-width: 384px;                /* Limita a largura máxima do div dentro do profile */
 }
-
 #profile h1 {
-    font: var(--text-lg);
-    color: var(--text-color-primary);
-    margin-bottom: 8px;
+    font: var(--text-lg);            /* Fonte maior para o título */
+    color: var(--text-color-primary);/* Cor principal do texto */
+    margin-bottom: 8px;              /* Espaço abaixo do título */  
 }
 
 
 
 #info {
-    list-style: none; /* tirando o estilo da lista, aquela bolinha */
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 280px;
+    list-style: none;               /* Remove as bolinhas da lista */
+    display: flex;                  /* Torna o container flexível */
+    flex-direction: column;         /* Alinha os itens em coluna */   
+    gap: 16px;                      /* Espaçamento entre os itens da lista */
+    width: 280px;                   /* Define largura fixa para o container */
     
 }
 
 #info li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: flex;                  /* Cada item da lista vira um flex container */
+    align-items: center;            /* Alinha verticalmente os itens dentro do li */
+    gap: 8px;                       /* Espaço entre os elementos dentro do li */
     
 }

@@ -1,27 +1,27 @@
-* {
+* {                                              /* resetar as configurações padrões */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root /* Raiz */{
+:root {                                          /* Raiz */
   /*Produto cor*/
   --brand-color: #EF5F4C;
-   /*Shape cor*/
+  /*Shape cor*/
    --background-color:#FFFFFF;
    --surface-color:#F5F5F5;
    --skeleton-color:#D9D9D9;
    --shape-transparency:#ffffff91;
-   /*TEXT cor*/
+  /*TEXT cor*/
    --text-color-primary: #313131;
    --text-color-secondary: #6C6C6C;
 
-   /* Tipografia */
-   --font-family: "poppins", sans-serif; /* Fonte poppins */
+  /* Tipografia */
+   --font-family: "poppins", sans-serif;         /* Fonte poppins */
    --text-lg: bold 32px/125% var(--font-family); /* fonte grande */
-   --text: 16px/150% var(--font-family);/* fonte geral, poderia ser 1.5 no lugar do 150% */
-   --text-md: 14px/170% var(--font-family);/* fonte Media */
-   --text-sm: 12px/170% var(--font-family);/* fonte pequena */
+   --text: 16px/150% var(--font-family);         /* fonte geral, poderia ser 1.5 no lugar do 150% */
+   --text-md: 14px/170% var(--font-family);      /* fonte Media */
+   --text-sm: 12px/170% var(--font-family);      /* fonte pequena */
 }
 
 body {
@@ -31,23 +31,23 @@ body {
 }
 
 
-a /* Os links */ {
-text-decoration: none; /* tirando as decorações como o underline */
-color: inherit; /* vai ficar a cor herdada no body */
+a {                                             /* Os links */
+text-decoration: none;                          /* tirando as decorações como o underline */
+color: inherit;                                 /* vai ficar a cor herdada no body */
 }
 
-a:hover /* quando eu passar o mouse por cima do link - link e o a, hover e essa ação de descansar o mouse*/ {
-  color: var(--brand-color); /*  --brand-color: #EF5F4C; e aquele vermelho*/
-  text-decoration: underline; /* colocando as decorações do underline */
+a:hover {                                       /* quando eu passar o mouse por cima do link - link e o a, hover e essa ação de descansar o mouse*/
+  color: var(--brand-color);                    /*  --brand-color: #EF5F4C; e aquele vermelho*/
+  text-decoration: underline;                   /* colocando as decorações do underline */
 }
 
-.container /* classe a nivel de projeto*/{
-  padding-inline: 32px;
-  max-width: 1280px;
-  margin-inline: auto;
+.container {                                    /* classe a nivel de projeto*/
+  padding-inline: 32px;                         /* Espaço interno nas laterais (esquerda e direita) */
+  max-width: 1280px;                            /* Largura máxima para limitar o conteúdo, evita esticar demais */
+  margin-inline: auto;                          /* Centraliza horizontalmente na página */
 
 }
 
-.bg-surface-color /* nav tem limitações a div nao por isso foi criado uma class nova para o background-color*/{
+.bg-surface-color {                             /* nav tem limitações a div nao por isso foi criado uma class nova para o background-color*/
   background-color: var(--surface-color);
 }

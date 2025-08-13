@@ -1,20 +1,19 @@
 nav {
-    display: flex;
-    justify-content: space-between; /* espaço igual entre os itens */
-    align-items: center; /* alinhar os itens no centro  */
-    padding-block: 20px;  /* padding em cima e em baixo */
+    display: flex;                      /* Transforma o nav num container flexível (flexbox) */
+    justify-content: space-between;     /* Distribui os itens do nav com espaço igual entre eles, um colado na esquerda e outro na direita */
+    align-items: center;                /* Alinha os itens verticalmente no centro */
+    padding-block: 20px;                /* Espaço interno em cima e embaixo do nav (20px) */
 }
 nav ul {
-    list-style: none; /* tirar aquelas bolinhas da lista */
-    display: flex;
-    align-items: center; /* alinhar os itens no centro  */
-    gap: 20px;  /* espaçamento entre os elementos da lista  */
+    list-style: none;                   /* Remove as bolinhas padrão das listas */
+    display: flex;                      /* Transforma a lista (ul) num container flexível */
+    align-items: center;                /* Alinha verticalmente os itens da lista ao centro */
+    gap: 24px;                          /* Espaço de 24px entre cada item da lista */
 
-    padding-block: 8px; /* espaço em cima e em baixo  */
-    gap: 24px;
+    padding-block: 8px;                 /* Espaço interno em cima e embaixo da lista */
 }
 
-nav ul li:last-child img /* e a ultima imagem da lista */ {
-width: 40px; /* altura */ 
-height: 40px; /* largura */ 
+nav ul li:last-child img{               /* Seleciona a imagem dentro do último item da lista */
+width: 40px;                            /* Define a largura da imagem para 40px */
+height: 40px;                           /* Define a altura da imagem para 40px */
 }

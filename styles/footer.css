@@ -1,9 +1,9 @@
 footer {
-display:flex; /* Define o footer como um container flexível */
-gap: 24px;  /*Espaço de 24px entre os elementos filhos dentro do footer */
-padding-block: 24px; /* Espaço interno de 24px no topo e embaixo do footer */
+display:flex;                   /* Define o footer como um container flexível */
+gap: 24px;                      /*Espaço de 24px entre os elementos filhos dentro do footer */
+padding-block: 24px;            /* Espaço interno de 24px no topo e embaixo do footer */
 }
 
-footer span:nth-child(1) { /* Seleciona o primeiro span dentro do footer */
-margin-right: auto; /* Faz o primeiro span "empurrar" os outros elementos para a direita, porque display: flex tem flex-direction: row por padrão.*/
+footer span:nth-child(1) {      /* Seleciona o primeiro span dentro do footer */
+margin-right: auto;             /* Faz o primeiro span "empurrar" os outros elementos para a direita, porque display: flex tem flex-direction: row por padrão.*/
 }
